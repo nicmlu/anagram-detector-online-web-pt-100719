@@ -6,8 +6,8 @@ class Anagram
   end
   
   def match(array)
-    matches = []
-    array.each do |anagram| 
+    anagrams = []
+    array.each do |word_2| 
       if anagram.split("").sort == self.word
         matches.push(anagram)
       end
